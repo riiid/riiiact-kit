@@ -5,11 +5,12 @@
 ## What's included?
 
 * `react`
-* `react-bootstrap`
 * `react-emoji`
+* `reflux`
 * `d3`
 * `lodash`
 * `superagent`
+* `q`
 
 ## Getting started
 
