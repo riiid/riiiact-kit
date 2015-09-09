@@ -76,11 +76,6 @@ gulp.task 'index', ->
     .pipe $.replace /\$AUTHOR/g,  pkg.author
     .pipe gulp.dest 'dist'
 
-gulp.task 'inline', ['browserify', 'index', 'styles'], ->
-  gulp.src 'dist/index.html'
-    .pipe $.inline base:'dist/'
-    .pipe gulp.dest 'dist/inlined'
-
 gulp.task 'release', ->
   try
     aws = require './aws.json'
@@ -98,8 +93,7 @@ gulp.task 'watch', ['clean'], ->
   gulp.watch 'styles/*.scss', ['styles']
   gulp.watch 'index.html', ['index']
 
-gulp.task 'build', ['clean'], ->
+gulp.task 'build', ['clean', 'browserify', 'index', 'styles'], ->
   process.env.NODE_ENV = 'production'
-  gulp.start 'inline'
 
 gulp.task 'default', ['watch']
