@@ -93,7 +93,8 @@ gulp.task 'watch', ['clean'], ->
   gulp.watch 'styles/*.scss', ['styles']
   gulp.watch 'index.html', ['index']
 
-gulp.task 'build', ['clean', 'browserify', 'index', 'styles'], ->
+gulp.task 'build', ['browserify'], ->
   process.env.NODE_ENV = 'production'
+  gulp.start ['index', 'styles']
 
 gulp.task 'default', ['watch']
