@@ -5,7 +5,7 @@
 ## What's included and why?
 
 * `react`
-* `react-emoji` : :troll:
+* `react-emoji` : :trollface:
 * `reflux` : for inter component communication and share state between components.
 * `d3` : visualize data
 * `lodash` : :wrench:
