@@ -2,15 +2,15 @@
 
 `riiid` flavored react starter kit. (inspired by [react-starterify](https://github.com/Granze/react-starterify)) It helps you to develop & deploy (to aws s3) `react` powered static page like a :zap:
 
-## What's included?
+## What's included and why?
 
 * `react`
-* `react-emoji`
-* `reflux`
-* `d3`
-* `lodash`
-* `superagent`
-* `q`
+* `react-emoji` : :troll:
+* `reflux` : for inter component communication and share state between components.
+* `d3` : visualize data
+* `lodash` : :wrench:
+* `superagent` : create rest api
+* `q`, `rxjs` : compose async task & rest api
 
 ## Getting started
 
