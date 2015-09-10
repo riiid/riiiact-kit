@@ -7,7 +7,7 @@
 * `react`
 * `react-emoji` : :trollface:
 * `reflux` : for inter component communication and share state between components.
-* `d3` : visualize data
+* `d3` : visualize :bar_chart:
 * `lodash` : :wrench:
 * `superagent` : create rest api
 * `q`, `rxjs` : compose async task & rest api
@@ -27,7 +27,7 @@ $ npm start
 $ gulp build
 ```
 
-## Deploy
+## Deploy (to s3)
 
 Create `aws.json` with following props.
 
