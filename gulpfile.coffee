@@ -14,7 +14,7 @@ $ = load
 
 reload = $.browserSync.reload
 p =
-  app    : './scripts/app.coffee'
+  app    : './scripts/root.coffee'
   scss   : 'styles/main.scss'
   bundle : 'app.js'
   distJs : 'dist/js'

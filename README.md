@@ -6,7 +6,7 @@
 
 * `react`
 * `react-emoji` : :trollface:
-* `reflux` : for inter component communication and share state between components.
+* `redux` : handle application-wide state management
 * `d3` : visualize :bar_chart:
 * `lodash` : :wrench:
 * `superagent` : create rest api
