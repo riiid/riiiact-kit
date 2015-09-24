@@ -9,8 +9,9 @@
 * `redux` : handle application-wide state management
 * `d3` : visualize :bar_chart:
 * `lodash` : :wrench:
-* `superagent` : create rest api
-* `q`, `rxjs` : compose async task & rest api
+* `superagent` : for rest api
+* `q`, `rxjs` : compose async tasks
+* `coffeescript` : :coffee: shorter & cleaner code
 
 ## Getting started
 
