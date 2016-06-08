@@ -1,0 +1,20 @@
+{
+    "parser": "babel-eslint",
+    "extends": "google",
+    "plugins": ["react"],
+    "globals": {
+      "document": true,
+      "window": true,
+      "__FIREBASE_URL__": true,
+      "__FIREBASE_AUTH__": true,
+      "__FIREBASE_APIKEY__": true,
+      "__VERSION__": true,
+      "__DEPENDENCIES__": true
+    },
+    "rules": {
+      "camelcase": 0,
+      "require-jsdoc": 0,
+      "react/jsx-uses-react": 1,
+      "react/jsx-uses-vars": 1
+    }
+}

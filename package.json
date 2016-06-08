@@ -1,71 +1,57 @@
 {
   "name": "riiiact-kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "riiid flavored react starter kit.",
-  "main": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
+    "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
+    "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/riiid/riiiact-kit"
   },
-  "keywords": [
-    "react",
-    "coffeescript",
-    "d3"
-  ],
-  "author": "kykim <kykim@riiid.co>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/riiid/riiiact-kit/issues"
   },
   "homepage": "https://github.com/riiid/riiiact-kit",
-  "dependencies": {
-    "d3": "^3.5.6",
-    "lodash": "^3.10.1",
-    "q": "^1.4.1",
-    "react": "^0.13.3",
-    "react-emoji": "^0.3.3",
-    "react-redux": "^2.1.2",
-    "redux": "^3.0.0",
-    "redux-logger": "^1.0.9",
-    "redux-thunk": "^1.0.0",
-    "rx": "^3.1.2",
-    "superagent": "^1.3.0"
-  },
+  "author": "kykim",
+  "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.9.6",
-    "browserify": "^11.1.0",
-    "coffee-react-transform": "^3.2.0",
-    "coffee-reactify": "^4.0.0",
-    "coffee-script": "^1.9.1",
-    "del": "^2.0.2",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "3.0.1",
-    "gulp-changed": "^1.2.1",
-    "gulp-coffeelint": "^0.5.0",
-    "gulp-csso": "^1.0.0",
-    "gulp-inline": "0.0.15",
-    "gulp-load-plugins": "^1.0.0-rc.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-replace": "^0.5.3",
-    "gulp-s3-ls": "^1.0.4",
-    "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.5.0",
-    "gulp-uglify": "^1.1.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.4.0"
-  },
-  "scripts": {
-    "start": "npm install && gulp"
-  },
-  "coffeelintConfig": {
-    "max_line_length": {
-      "level": "ignore"
-    },
-    "coffeelint": {
-      "transforms": [
-        "coffee-react-transform"
-      ]
-    }
+    "axios": "^0.12.0",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "bootstrap-sass": "^3.3.6",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.11.1",
+    "eslint-config-google": "^0.5.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "file-loader": "^0.8.5",
+    "firebase": "^3.0.4",
+    "html-webpack-plugin": "^2.19.0",
+    "image-webpack-loader": "^1.8.0",
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0",
+    "node-sass": "^3.7.0",
+    "react": "^15.1.0",
+    "react-bootstrap": "^0.29.4",
+    "react-dom": "^15.1.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.4.1",
+    "react-select": "^1.0.0-beta13",
+    "rimraf": "^2.5.2",
+    "rx": "^4.1.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

@@ -1,8 +1,9 @@
 .tmp
 .idea
 .publish
-aws.json
+config.json
 dist
+
 ### vim ###
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]

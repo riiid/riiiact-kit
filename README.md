@@ -1,17 +1,21 @@
 # riiiact-kit
 
-`riiid` flavored react starter kit. (inspired by [react-starterify](https://github.com/Granze/react-starterify)) It helps you to develop & deploy (to aws s3) `react` powered static page like a :zap:
+`riiid` flavored react starter kit. It helps you to develop & deploy `react` powered app like a :zap:
 
 ## What's included and why?
 
 * `react`
-* `react-emoji` : :trollface:
-* `redux` : handle application-wide state management
+* `react-bootstrap` : :dress::lipstick:
+* `firebase` : persist data & host app
 * `d3` : visualize :bar_chart:
 * `lodash` : :wrench:
-* `superagent` : for rest api
-* `q`, `rxjs` : compose async tasks
-* `coffeescript` : :coffee: shorter & cleaner code
+* `axios` : create rest api
+* `rxjs` : compose async
+
+## Prerequisites
+
+* `firebase` account.
+* [firebase-tools](https://github.com/firebase/firebase-tools)
 
 ## Getting started
 
@@ -19,28 +23,42 @@
 $ git clone riiid/riiiact-kit <YOUR_DIR>
 $ cd <YOUR_DIR>
 $ rm -rf .git
+```
+
+create `config.json` under `build/` with
+
+```
+{
+  "production": {
+    "firebase_auth": "<FIREBASE_AUTH_DOMAIN>",
+    "firebase_url": "<FIREBASE_URL>",
+    "firebase_apikey": "<API_KEY>"
+  },
+  "development": {
+    "firebase_auth": "<FIREBASE_AUTH_DOMAIN>",
+    "firebase_url": "<FIREBASE_URL>",
+    "firebase_apikey": "<API_KEY>"
+  }
+}
+```
+
+start development with
+
+```
 $ npm start
 ```
 
 ## Build
 
-```
-$ gulp build
-```
-
-## Deploy (to s3)
-
-Create `aws.json` with following props.
+https://firebase.google.com/docs/hosting/deploying
 
 ```
-{
-  "key": "<YOUR_KEY>",
-  "secret": "<YOUR_SECRET>",
-  "bucket": "<YOUR_BUCKET>",
-  "region": "<REGION>"
-}
+$ npm run build && firebase deploy
 ```
 
-```
-$ gulp release
-```
+## Deploy
+
+## Further works
+
+ - [ ] use `Redux` for application wide action & state.
+ - [ ] `d3` + `firebase` demo.
