@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const rimraf = require('rimraf');
 
-rimraf.sync(path.join(__dirname, '.git'));
-fs.writeFileSync(path.join(__dirname, 'build', 'config.json'), JSON.stringify({
+rimraf.sync(path.join(__dirname, '..', '..', '.git'));
+fs.writeFileSync(path.join(__dirname, '..', '..', 'build', 'config.json'), JSON.stringify({
   production: {
     firebase_auth: '',
     firebase_url: '',
@@ -15,4 +15,4 @@ fs.writeFileSync(path.join(__dirname, 'build', 'config.json'), JSON.stringify({
     firebase_url: '',
     firebase_apikey: ''
   }
-});
+}, null, 2));
