@@ -4,6 +4,7 @@
   "description": "riiid flavored react starter kit.",
   "main": "index.js",
   "scripts": {
+    "new": "npm install && node scripts/new",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",

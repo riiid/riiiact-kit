@@ -22,7 +22,7 @@
 ```
 $ git clone riiid/riiiact-kit <YOUR_DIR>
 $ cd <YOUR_DIR>
-$ rm -rf .git
+$ npm run new
 ```
 
 create `config.json` under `build/` with
