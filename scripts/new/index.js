@@ -1,18 +1,14 @@
-#!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
-const rimraf = require('rimraf');
+const prompt = require('./prompt');
+const initGit = require('./initGit');
+const initPkg = require('./initPkg');
+const initConfig = require('./initConfig');
 
-rimraf.sync(path.join(__dirname, '..', '..', '.git'));
-fs.writeFileSync(path.join(__dirname, '..', '..', 'build', 'config.json'), JSON.stringify({
-  production: {
-    firebase_auth: '',
-    firebase_url: '',
-    firebase_apikey: ''
-  },
-  development: {
-    firebase_auth: '',
-    firebase_url: '',
-    firebase_apikey: ''
+prompt.run((err, result) => {
+  if (err) {
+    console.error('cancled');
+  } else {
+    initGit();
+    initPkg(result);
+    initConfig();
   }
-}, null, 2));
+});

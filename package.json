@@ -4,23 +4,16 @@
   "description": "riiid flavored react starter kit.",
   "main": "index.js",
   "scripts": {
-    "new": "npm install && node scripts/new",
+    "new": "npm install --depth 0 && node scripts/new",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/riiid/riiiact-kit"
-  },
-  "bugs": {
-    "url": "https://github.com/riiid/riiiact-kit/issues"
-  },
   "devServer": {
     "port": 3010
   },
-  "homepage": "https://github.com/riiid/riiiact-kit",
+  "homepage": "https://riiiact-kit-dev.firebaseapp.com/",
   "author": "kykim",
   "license": "MIT",
   "devDependencies": {
@@ -44,6 +37,7 @@
     "lodash": "^4.13.1",
     "moment": "^2.13.0",
     "node-sass": "^3.7.0",
+    "prompt": "^1.0.0",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.4",
     "react-dom": "^15.1.0",
