@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/riiid/riiiact-kit/issues"
   },
+  "devServer": {
+    "port": 3010
+  },
   "homepage": "https://github.com/riiid/riiiact-kit",
   "author": "kykim",
   "license": "MIT",
