@@ -5,6 +5,7 @@
     "globals": {
       "document": true,
       "window": true,
+      "__TARGET__": true,
       "__FIREBASE_URL__": true,
       "__FIREBASE_AUTH__": true,
       "__FIREBASE_APIKEY__": true,

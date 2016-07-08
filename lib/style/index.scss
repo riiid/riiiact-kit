@@ -1,22 +1,51 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "~react-select/scss/default.scss";
 
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_responsive-utilities.scss";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss";
+
 html, body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  padding-top: 70px;
   background: #ecf0f1;
   color: #4d4d4d;
-  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
 }
 
-.card {
-  box-sizing: border-box;
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+.container {
+  padding: 84px 15px 20px;
 }
+
+code {
+  font-family: Consolas,Liberation Mono,Menlo,Courier,monospace;
+  padding: 0;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  margin: 0;
+  font-size: 85%;
+  color: #bf2a5c;
+  background-color: rgba(0,0,0,.04);
+  border-radius: 3px;
+}
+
+code:after, code:before {
+  letter-spacing: -.2em;
+  content: "\A0";
+}
+
+blockquote {
+  color: #777;
+  margin: 0;
+  padding-left: 1.1rem;
+  border-left: 5px solid #ee6e73;
+}
+

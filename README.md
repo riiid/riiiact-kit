@@ -35,7 +35,7 @@ TBD
 
 ## What's included and why?
 
-* `react-bootstrap` : :dress::lipstick:
+* `material-ui`, `react-bootstrap` : :dress::lipstick:
 * `firebase` : persist data & host app
 * `d3` : visualize :bar_chart:
 * `lodash` : :wrench:
@@ -44,5 +44,4 @@ TBD
 
 ## Further works
 
- - [ ] use `Redux` for application wide action & state.
  - [ ] `d3` + `firebase` demo.

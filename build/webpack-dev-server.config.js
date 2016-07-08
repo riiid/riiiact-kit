@@ -84,6 +84,7 @@ module.exports = {
       __FIREBASE_AUTH__: JSON.stringify(config.firebase_auth),
       __FIREBASE_APIKEY__: JSON.stringify(config.firebase_apikey),
       __VERSION__: JSON.stringify(pkg.version),
+      __TARGET__: JSON.stringify(target),
       __DEPENDENCIES__: JSON.stringify(pkg.devDependencies)
     }),
     new html({
