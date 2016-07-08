@@ -2,16 +2,6 @@
 
 `riiid` flavored react starter kit. It helps you to develop & deploy `react` powered app like a :zap:
 
-## What's included and why?
-
-* `react`
-* `react-bootstrap` : :dress::lipstick:
-* `firebase` : persist data & host app
-* `d3` : visualize :bar_chart:
-* `lodash` : :wrench:
-* `axios` : create rest api
-* `rxjs` : compose async
-
 ## Prerequisites
 
 * `firebase` account.
@@ -25,22 +15,7 @@ $ cd <YOUR_DIR>
 $ npm run new
 ```
 
-create `config.json` under `build/` with
-
-```
-{
-  "production": {
-    "firebase_auth": "<FIREBASE_AUTH_DOMAIN>",
-    "firebase_url": "<FIREBASE_URL>",
-    "firebase_apikey": "<API_KEY>"
-  },
-  "development": {
-    "firebase_auth": "<FIREBASE_AUTH_DOMAIN>",
-    "firebase_url": "<FIREBASE_URL>",
-    "firebase_apikey": "<API_KEY>"
-  }
-}
-```
+> update `config.json` for firebase.
 
 start development with
 
@@ -50,13 +25,22 @@ $ npm start
 
 ## Build
 
-https://firebase.google.com/docs/hosting/deploying
-
 ```
-$ npm run build && firebase deploy
+$ npm run build
 ```
 
 ## Deploy
+
+TBD
+
+## What's included and why?
+
+* `react-bootstrap` : :dress::lipstick:
+* `firebase` : persist data & host app
+* `d3` : visualize :bar_chart:
+* `lodash` : :wrench:
+* `axios` : create rest api
+* `rxjs` : compose async
 
 ## Further works
 
