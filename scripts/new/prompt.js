@@ -29,7 +29,7 @@ prompt.run = cb => {
   prompt.start();
   prompt.get(SCHEMA, (err, result) => {
     utils.nl();
-    cb(err, result)
+    cb(err, result);
     utils.nl();
   });
 };

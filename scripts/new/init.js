@@ -14,7 +14,7 @@ function Result(prefix) {
 
 Result.prototype.add = function(result) {
   _.assign(this.result, result);
-}
+};
 
 Result.prototype.print = function() {
   _.chain(this.result)
@@ -23,7 +23,7 @@ Result.prototype.print = function() {
     console.log(`${this.prefix} ${t}`);
   })
   .value();
-}
+};
 
 function Init(prompt) {
   this.prompt = prompt || {};
@@ -36,9 +36,9 @@ Init.prototype.git = function() {
   try {
     rimraf.sync(path.join(utils.root, '.git'));
     this.deleted.add({git: './git'});
-  } catch(err) {
+  } catch (err) {
   }
-}
+};
 
 Init.prototype.pkg = function() {
   try {
@@ -56,13 +56,14 @@ Init.prototype.pkg = function() {
     var filepath = path.join(utils.root, 'package.json');
     fs.writeFileSync(filepath, JSON.stringify(_pkg, null, 2));
     this.updated.add({pkg: 'package.json'});
-  } catch(err) {
+  } catch (err) {
   }
-}
+};
 
 Init.prototype.config = function() {
   try {
-    fs.writeFileSync(path.join(utils.root, 'build', 'config.json'), JSON.stringify({
+    const _path = path.join(utils.root, 'build', 'config.json');
+    fs.writeFileSync(_path, JSON.stringify({
       production: {
         firebase_auth: '',
         firebase_url: '',
@@ -75,9 +76,9 @@ Init.prototype.config = function() {
       }
     }, null, 2));
     this.created.add({config: 'build/config.json'});
-  } catch(err) {
+  } catch (err) {
   }
-}
+};
 
 Init.prototype.firebaserc = function() {
   try {
@@ -87,9 +88,9 @@ Init.prototype.firebaserc = function() {
       }
     }, null, 2));
     this.updated.add({firebaserc: '.firebaserc'});
-  } catch(err) {
+  } catch (err) {
   }
-}
+};
 
 Init.prototype.readme = function() {
   try {
@@ -110,9 +111,9 @@ $ npm run build
 $ npm run build:prod
 \`\`\``);
     this.updated.add({readme: 'README.md'});
-  } catch(err) {
+  } catch (err) {
   }
-}
+};
 
 Init.prototype.run = function() {
   this.pkg();
@@ -121,15 +122,15 @@ Init.prototype.run = function() {
   this.firebaserc();
   this.readme();
   return this;
-}
+};
 
 Init.prototype.result = function() {
   this.created.print();
   this.deleted.print();
   this.updated.print();
   return this;
-}
+};
 
-Init.create = prompt => new Init(prompt)
+Init.create = prompt => new Init(prompt);
 
 module.exports = Init;
