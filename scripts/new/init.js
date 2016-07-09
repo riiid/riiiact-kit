@@ -91,11 +91,35 @@ Init.prototype.firebaserc = function() {
   }
 }
 
+Init.prototype.readme = function() {
+  try {
+    fs.writeFileSync(path.join(utils.root, 'README.md'), `# ${this.prompt.name}
+
+${this.prompt.description}
+
+## development
+
+\`\`\`
+$ npm start
+\`\`\`
+
+## build
+
+\`\`\`
+$ npm run build
+$ npm run build:prod
+\`\`\``);
+    this.updated.add({readme: 'README.md'});
+  } catch(err) {
+  }
+}
+
 Init.prototype.run = function() {
   this.pkg();
   this.git();
   this.config();
   this.firebaserc();
+  this.readme();
   return this;
 }
 
