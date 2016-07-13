@@ -36,7 +36,7 @@
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^1.8.0",
     "lodash": "^4.13.1",
-    "material-ui": "^0.15.1",
+    "material-ui": "^0.15.2",
     "moment": "^2.14.1",
     "node-sass": "^3.8.0",
     "prompt": "^1.0.0",
