@@ -1,4 +1,9 @@
-# riiiact-kit
+```
+	 ___ _ _ _         _       _  _ _ _
+	| _ \_)_)_)__ _ __| |_  _ | |/ (_) |_
+	|   / | | / _` / _|  _||_||   <| |  _|
+	|_|_\_|_|_\__,_\__|\__|   |_|\_|_|\__|
+```
 
 `riiid` flavored react starter kit. It helps you to develop & deploy `react` powered app like a :zap:
 
@@ -15,9 +20,9 @@ $ cd <YOUR_DIR>
 $ npm run new
 ```
 
-> update `config.json` for firebase.
+> `npm run new` will create `build/config.json` file. Update if you choose firebase as your backend.
 
-start development with
+## Development
 
 ```
 $ npm start
