@@ -29,6 +29,12 @@ $ npm start
 $ npm run build
 ```
 
+## Test
+
+```
+$ npm test
+```
+
 ## Deploy
 
 TBD
@@ -41,6 +47,7 @@ TBD
 * `lodash` : :wrench:
 * `axios` : create rest api
 * `rxjs` : compose async
+* `jest`, `enzyme` : test
 
 ## Further works
 
