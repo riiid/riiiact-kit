@@ -57,3 +57,4 @@ TBD
 ## Further works
 
  - [ ] `d3` + `firebase` demo.
+ - [ ] support i18n.
