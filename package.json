@@ -3,8 +3,17 @@
   "version": "0.4.0",
   "description": "riiid flavored react starter kit.",
   "main": "index.js",
+  "scripts-info": {
+    "new": "Start new project",
+    "info": "List available script",
+    "start": "Run this app",
+    "build": "Build app under dist/",
+    "build:prod": "Build PRODUCTION app under dist/",
+    "test": "Run test"
+  },
   "scripts": {
     "new": "npm install --depth 0 && node scripts/new",
+    "info": "npm-scripts-info",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
@@ -47,6 +56,7 @@
     "material-ui": "^0.15.4",
     "moment": "^2.14.1",
     "node-sass": "^3.8.0",
+    "npm-scripts-info": "^0.3.6",
     "prompt": "^1.0.0",
     "react-addons-test-utils": "^15.3.0",
     "react-bootstrap": "^0.30.2",
