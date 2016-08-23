@@ -10,7 +10,8 @@
       "__FIREBASE_AUTH__": true,
       "__FIREBASE_APIKEY__": true,
       "__VERSION__": true,
-      "__DEPENDENCIES__": true
+      "__DEPENDENCIES__": true,
+      "__TITLE__": true
     },
     "rules": {
       "camelcase": 0,

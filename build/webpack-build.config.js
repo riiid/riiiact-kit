@@ -78,7 +78,8 @@ module.exports = {
       __TARGET__: JSON.stringify(target),
       __DEPENDENCIES__: JSON.stringify(
         Object.assign({}, pkg.devDependencies, pkg.dependencies)
-      )
+      ),
+      __TITLE__: JSON.stringify(pkg.name)
     }),
     new html({
       title: pkg.name,
