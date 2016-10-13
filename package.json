@@ -12,7 +12,7 @@
     "test": "Run test"
   },
   "scripts": {
-    "new": "npm install --cache-min 999999 --depth 0 && node scripts/new",
+    "new": "node scripts/hasbin yarn && yarn && node scripts/new",
     "info": "npm-scripts-info",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
