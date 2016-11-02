@@ -104,6 +104,12 @@ ${this.prompt.description}
 $ npm start
 \`\`\`
 
+## test
+
+\`\`\`
+$ npm test
+\`\`\`
+
 ## build
 
 \`\`\`

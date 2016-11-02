@@ -20,30 +20,6 @@ $ cd <YOUR_DIR>
 $ npm run new
 ```
 
-> `npm run new` will create `build/config.json` file. Update if you choose firebase as your backend.
-
-## Development
-
-```
-$ npm start
-```
-
-## Build
-
-```
-$ npm run build
-```
-
-## Test
-
-```
-$ npm test
-```
-
-## Deploy
-
-TBD
-
 ## What's included and why?
 
 * `material-ui`, `react-bootstrap` : :dress::lipstick:
