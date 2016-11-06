@@ -9,15 +9,18 @@
     "start": "Run this app",
     "build": "Build app under dist/",
     "build:prod": "Build PRODUCTION app under dist/",
-    "test": "Run test"
+    "test": "Run unit test",
+    "test:e2e": "Run end to end test"
   },
   "scripts": {
     "new": "node scripts/hasbin yarn && yarn && node scripts/new",
+    "postinstall": "node test/nightwatch.conf.js",
     "info": "npm-scripts-info",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress",
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
     "test": "jest --watch",
+    "test:e2e": "nightwatch --config test/nightwatch.conf.js --env default",
     "coverage": "jest --coverage"
   },
   "devServer": {
@@ -57,6 +60,7 @@
     "lodash": "^4.16.6",
     "material-ui": "^0.16.1",
     "moment": "^2.15.2",
+    "nightwatch": "^0.9.8",
     "node-sass": "^3.8.0",
     "npm-scripts-info": "^0.3.6",
     "prompt": "^1.0.0",
@@ -75,6 +79,7 @@
     "rimraf": "^2.5.4",
     "rxjs": "^5.0.0-beta.11",
     "sass-loader": "^4.0.0",
+    "selenium-download": "^2.0.7",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3",
