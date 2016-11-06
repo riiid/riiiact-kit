@@ -69,6 +69,7 @@
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
     "redux-logger": "^2.7.4",
+    "redux-mock-store": "^1.2.1",
     "redux-observable": "^0.12.1",
     "redux-thunk": "^2.1.0",
     "rimraf": "^2.5.4",
@@ -80,6 +81,12 @@
     "webpack-dev-server": "^1.14.1"
   },
   "jest": {
+    "setupFiles": [
+      "test/jest-setup.js"
+    ],
+    "testPathIgnorePatterns": [
+      ".setup.js"
+    ],
     "coverageReporters": [
       "text"
     ],
