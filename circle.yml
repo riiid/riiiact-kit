@@ -3,7 +3,7 @@ machine:
     version: 4
 
 test:
-  overrid:
+  override:
     - npm run test:circle
 
 dependencies:
