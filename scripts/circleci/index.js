@@ -9,8 +9,8 @@ fs.writeFileSync(_path, JSON.stringify({
     firebase_apikey: ''
   },
   development: {
-    firebase_auth: '',
-    firebase_url: '',
-    firebase_apikey: ''
+    firebase_auth: process.env.FIREBASE_AUTH || '',
+    firebase_url: process.env.FIREBASE_URL || '',
+    firebase_apikey: process.env.FIREBASE_APIKEY || ''
   }
 }, null, 2));

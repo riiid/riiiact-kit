@@ -22,4 +22,4 @@ test:
   override:
     - npm run test:circleci
   post:
-    - mv coverage/* $CIRCLE_ARTIFACTS
+    - mv coverage $CIRCLE_ARTIFACTS

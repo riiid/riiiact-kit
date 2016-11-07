@@ -1,7 +1,8 @@
 const path = require('path');
 const pkg = require('../package.json');
 const BIN_PATH = path.join('node_modules', 'nightwatch', 'bin');
-const OUTPUT_PATH = process.env.CIRCLE_ARTIFACTS ||
+const OUTPUT_PATH = process.env.CIRCLE_ARTIFACTS ?
+  path.join(process.env.CIRCLE_ARTIFACTS, 'output') :
   path.join('node_modules', 'nightwatch', 'output', pkg.version);
 
 var FILECOUNT = 0;
