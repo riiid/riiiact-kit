@@ -17,3 +17,5 @@ dependencies:
 test:
   override:
     - npm run test:circleci
+  post:
+    - node scripts/artifacts

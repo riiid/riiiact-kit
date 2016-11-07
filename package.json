@@ -9,8 +9,10 @@
     "start": "Run this app",
     "build": "Build app under dist/",
     "build:prod": "Build PRODUCTION app under dist/",
-    "test": "Run unit test",
-    "test:e2e": "Run end to end test"
+    "test": "Run unit test with watch",
+    "test:unit": "Run unit test once",
+    "test:e2e": "Run end to end test",
+    "coverage": "Run unit test and generate coverage"
   },
   "scripts": {
     "new": "node scripts/hasbin yarn && yarn && node scripts/new",
@@ -20,8 +22,9 @@
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
     "test": "jest --watch",
+    "test:unit": "jest",
     "test:e2e": "nightwatch --config test/nightwatch.conf.js --env default",
-    "test:circleci": "npm test && npm test:e2e",
+    "test:circleci": "npm run coverage && npm test:e2e",
     "coverage": "jest --coverage"
   },
   "devServer": {
@@ -93,7 +96,7 @@
       ".setup.js"
     ],
     "coverageReporters": [
-      "text"
+      "text", "html"
     ],
     "modulePaths": [
       "lib"
