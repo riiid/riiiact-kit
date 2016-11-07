@@ -24,7 +24,7 @@
     "test": "jest --watch",
     "test:unit": "jest",
     "test:e2e": "nightwatch --config test/nightwatch.conf.js --env default",
-    "test:circleci": "npm run coverage && npm test:e2e",
+    "test:circleci": "npm run coverage && npm run test:e2e",
     "coverage": "jest --coverage"
   },
   "devServer": {
