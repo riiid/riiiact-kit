@@ -1,5 +1,5 @@
 const path = require('path');
-const pkt = require('../package.json');
+const pkg = require('../package.json');
 const BIN_PATH = path.join('node_modules', 'nightwatch', 'bin');
 const OUTPUT_PATH = process.env.CIRCLE_ARTIFACTS ||
   path.join('node_modules', 'nightwatch', 'output', pkg.version);
