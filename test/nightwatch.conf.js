@@ -1,6 +1,8 @@
-const PKG = require('../package.json');
-const BINPATH = './node_modules/nightwatch/bin/';
-const SCREENSHOT_PATH = "./node_modules/nightwatch/screenshots/" + PKG.version + "/"
+const path = require('path');
+const pkt = require('../package.json');
+const BIN_PATH = path.join('node_modules', 'nightwatch', 'bin');
+const OUTPUT_PATH = process.env.CIRCLE_ARTIFACTS ||
+  path.join('node_modules', 'nightwatch', 'output', pkg.version);
 
 var FILECOUNT = 0;
 
@@ -8,14 +10,14 @@ module.exports = {
   "src_folders": [
     "test/e2e"
   ],
-  "output_folder": false,
+  "output_folder": OUTPUT_PATH,
   "selenium": {
     "start_process": true,
     "server_path": "node_modules/nightwatch/bin/selenium.jar",
     "host": "127.0.0.1",
     "port": 4444,
     "cli_args": {
-      "webdriver.chrome.driver" : "node_modules/nightwatch/bin/chromedriver"
+      "webdriver.chrome.driver": "node_modules/nightwatch/bin/chromedriver"
     }
   },
   "test_settings": {
@@ -35,31 +37,30 @@ module.exports = {
       }
     }
   }
-}
+};
 
-require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) {
-  console.log(BINPATH);
+require('fs').stat(path.join(BIN_PATH, 'selenium.jar'), function(err, stat) {
   if (err || !stat || stat.size < 1) {
-    require('selenium-download').ensure(BINPATH, function(error) {
+    require('selenium-download').ensure(BIN_PATH, function(error) {
       if (error) throw new Error(error);
-      console.log('✔ Selenium & Chromedriver downloaded to:', BINPATH);
+      console.log('✔ Selenium & Chromedriver downloaded to:', BIN_PATH);
     });
   }
 });
 
-function padLeft (count) {
+function padLeft(count) {
   return count < 10 ? '0' + count : count.toString();
 }
 
-function imgpath (browser) {
-  var a = browser.options.desiredCapabilities;
-  var meta = [a.platform];
-  meta.push(a.browserName ? a.browserName : 'any');
-  meta.push(a.version ? a.version : 'any');
-  meta.push(a.name); // this is the test filename so always exists.
-  var metadata = meta.join('~').toLowerCase().replace(/ /g, '');
-  return SCREENSHOT_PATH + metadata + '_' + padLeft(FILECOUNT++) + '_';
+function imgpath(browser, name) {
+  const opt = browser.options.desiredCapabilities;
+  const meta = [
+    opt.platform,
+    opt.browserName ? opt.browserName : 'any',
+    opt.version ? opt.version : 'any',
+    opt.name
+  ].join('~').toLowerCase().replace(/ /g, '');
+  return path.join(OUTPUT_PATH, `${meta}_${padLeft(FILECOUNT++)}_${name}`);
 }
 
 module.exports.imgpath = imgpath;
-module.exports.SCREENSHOT_PATH = SCREENSHOT_PATH;
