@@ -15,6 +15,9 @@ dependencies:
     - yarn
 
 test:
+  pre:
+    - npm start
+        background: true
   override:
     - npm run test:circleci
   post:
