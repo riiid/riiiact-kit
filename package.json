@@ -21,6 +21,7 @@
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
     "test": "jest --watch",
     "test:e2e": "nightwatch --config test/nightwatch.conf.js --env default",
+    "test:circleci": "npm test && npm test:e2e",
     "coverage": "jest --coverage"
   },
   "devServer": {

@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 4
+
+test:
+  overrid:
+    - npm run test:circle
+
+dependencies:
+  pre:
+    - npm install -g npm@3
