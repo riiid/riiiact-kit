@@ -16,9 +16,10 @@ dependencies:
 
 test:
   pre:
+    - node scripts/circleci
     - npm start:
         background: true
   override:
     - npm run test:circleci
   post:
-    - node scripts/artifacts
+    - mv coverage/* $CIRCLE_ARTIFACTS
