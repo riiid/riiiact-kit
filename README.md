@@ -5,6 +5,8 @@
 |_|_\_|_|_\__,_\__|\__|   |_|\_|_|\__|
 ```
 
+[![CircleCI](https://circleci.com/gh/riiid/riiiact-kit.svg?style=svg)](https://circleci.com/gh/riiid/riiiact-kit) [![Coverage Status](https://coveralls.io/repos/github/riiid/riiiact-kit/badge.svg)](https://coveralls.io/github/riiid/riiiact-kit)
+
 `riiid` flavored react starter kit. It helps you to develop & deploy `react` powered app like a :zap:
 
 ## Prerequisites

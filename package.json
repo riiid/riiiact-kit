@@ -25,7 +25,8 @@
     "test:unit": "jest",
     "test:e2e": "nightwatch --config test/nightwatch.conf.js --env default",
     "test:circleci": "npm run coverage && npm run test:e2e",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "coverage:circleci": "jest --coverage && cat coverage/lcov.info | coveralls"
   },
   "devServer": {
     "port": 3010
@@ -49,6 +50,7 @@
     "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.5",
     "colors": "^1.1.2",
+    "coveralls": "^2.11.14",
     "css-loader": "^0.25.0",
     "enzyme": "^2.5.1",
     "eslint": "^3.9.1",
@@ -96,7 +98,9 @@
       ".setup.js"
     ],
     "coverageReporters": [
-      "text", "html"
+      "text",
+      "html",
+      "lcov"
     ],
     "modulePaths": [
       "lib"
