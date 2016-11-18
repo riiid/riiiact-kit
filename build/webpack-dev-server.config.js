@@ -10,6 +10,7 @@ module.exports = {
   entry: [
     `webpack-dev-server/client?http://localhost:${pkg.devServer.port}`,
     'webpack/hot/only-dev-server',
+    'react-hot-loader/patch',
     './lib/index.js'
   ],
   output: {
@@ -24,7 +25,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loaders: ["react-hot", "babel-loader"]
+        loader: "babel-loader"
       },
       {
         test: /\.(js|jsx)$/,
