@@ -16,6 +16,7 @@
   },
   "scripts": {
     "new": "node scripts/hasbin yarn && yarn && node scripts/new",
+    "init-config": "node scripts/init-config",
     "selenium-download": "node scripts/selenium-download",
     "info": "npm-scripts-info",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress --open",

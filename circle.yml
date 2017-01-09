@@ -18,7 +18,7 @@ dependencies:
 
 test:
   pre:
-    - node scripts/circleci
+    - npm run init-config
     - npm start:
         background: true
   override:
