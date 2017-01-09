@@ -40,15 +40,6 @@ module.exports = {
   }
 };
 
-require('fs').stat(path.join(BIN_PATH, 'selenium.jar'), function(err, stat) {
-  if (err || !stat || stat.size < 1) {
-    require('selenium-download').ensure(BIN_PATH, function(error) {
-      if (error) throw new Error(error);
-      console.log('✔ Selenium & Chromedriver downloaded to:', BIN_PATH);
-    });
-  }
-});
-
 function padLeft(count) {
   return count < 10 ? '0' + count : count.toString();
 }

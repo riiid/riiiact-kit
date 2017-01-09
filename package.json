@@ -16,14 +16,14 @@
   },
   "scripts": {
     "new": "node scripts/hasbin yarn && yarn && node scripts/new",
-    "postinstall": "node test/nightwatch.conf.js",
+    "selenium-download": "node scripts/selenium-download",
     "info": "npm-scripts-info",
     "start": "webpack-dev-server --config build/webpack-dev-server.config.js --hot --inline --progress --open",
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
     "test": "jest --watch",
     "test:unit": "jest",
-    "test:e2e": "nightwatch --config test/nightwatch.conf.js --env default",
+    "test:e2e": "npm run selenium-download && nightwatch --config test/nightwatch.conf.js --env default",
     "test:circleci": "npm run coverage:circleci && npm run test:e2e",
     "coverage": "jest --coverage",
     "coverage:circleci": "jest --coverage && cat coverage/lcov.info | coveralls"
