@@ -1,9 +1,12 @@
 const path = require('path');
 const pkg = require('../package.json');
+const configs = require('../build/config');
 const BIN_PATH = path.join('node_modules', 'nightwatch', 'bin');
 const OUTPUT_PATH = process.env.CIRCLE_ARTIFACTS ?
   path.join(process.env.CIRCLE_ARTIFACTS, 'output') :
   path.join('node_modules', 'nightwatch', 'output', pkg.version);
+var target = process.env['TARGET'] || 'development';
+var config = configs[target];
 
 var FILECOUNT = 0;
 
@@ -23,7 +26,7 @@ module.exports = {
   },
   "test_settings": {
     "default": {
-      "launch_url": "http://localhost:3010",
+      "launch_url": `http://localhost:${config.devServer.port}`,
       "globals": {
         "waitForConditionTimeout": 5000
       },
