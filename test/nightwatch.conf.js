@@ -26,7 +26,7 @@ module.exports = {
   },
   "test_settings": {
     "default": {
-      "launch_url": `http://localhost:${config.devServer.port}`,
+      "launch_url": `http://localhost:${config.server.port}`,
       "globals": {
         "waitForConditionTimeout": 5000
       },

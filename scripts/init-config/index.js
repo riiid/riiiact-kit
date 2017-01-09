@@ -9,7 +9,7 @@ fs.writeFileSync(_path, JSON.stringify({
     firebase_apikey: ''
   },
   development: {
-    devServer: {
+    server: {
       port: 8080
     },
     firebase_auth: process.env.FIREBASE_AUTH || '',

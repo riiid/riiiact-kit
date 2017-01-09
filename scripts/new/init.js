@@ -68,7 +68,7 @@ Init.prototype.config = function() {
         firebase_apikey: ''
       },
       development: {
-        devServer: {
+        server: {
           port: _opt.port
         },
         firebase_auth: '',
