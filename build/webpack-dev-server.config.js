@@ -8,7 +8,7 @@ var pkg = require('../package');
 
 module.exports = {
   entry: [
-    `webpack-dev-server/client?http://localhost:${pkg.devServer.port}`,
+    `webpack-dev-server/client?http://localhost:${config.devServer.port}`,
     'webpack/hot/only-dev-server',
     'react-hot-loader/patch',
     './lib/index.js'
@@ -68,7 +68,7 @@ module.exports = {
   },
   devtool: 'cheap-source-map',
   devServer: {
-    port: pkg.devServer.port,
+    port: config.devServer.port,
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers": "Origin, X-Request-With, Content-Type, Accept, Key",

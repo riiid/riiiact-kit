@@ -28,9 +28,6 @@
     "coverage": "jest --coverage",
     "coverage:circleci": "jest --coverage && cat coverage/lcov.info | coveralls"
   },
-  "devServer": {
-    "port": 3010
-  },
   "homepage": "https://riiiact-kit-dev.firebaseapp.com/",
   "author": "kykim",
   "license": "MIT",

@@ -42,18 +42,15 @@ Init.prototype.git = function() {
 
 Init.prototype.pkg = function() {
   try {
-    var _opt = this.prompt;
-    var _pkg = Object.assign(pkg, {
+    const _opt = this.prompt;
+    const _pkg = Object.assign(pkg, {
       name: _opt.name,
       version: '0.0.1',
       description: _opt.description,
-      devServer: {
-        port: _opt.port
-      },
       homepage: '',
       author: ''
     });
-    var filepath = path.join(utils.root, 'package.json');
+    const filepath = path.join(utils.root, 'package.json');
     fs.writeFileSync(filepath, JSON.stringify(_pkg, null, 2));
     this.updated.add({pkg: 'package.json'});
   } catch (err) {
@@ -62,6 +59,7 @@ Init.prototype.pkg = function() {
 
 Init.prototype.config = function() {
   try {
+    const _opt = this.prompt;
     const _path = path.join(utils.root, 'build', 'config.json');
     fs.writeFileSync(_path, JSON.stringify({
       production: {
@@ -70,6 +68,9 @@ Init.prototype.config = function() {
         firebase_apikey: ''
       },
       development: {
+        devServer: {
+          port: _opt.port
+        },
         firebase_auth: '',
         firebase_url: '',
         firebase_apikey: ''
