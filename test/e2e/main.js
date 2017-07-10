@@ -1,11 +1,12 @@
-var conf = require('../nightwatch.conf.js');
+const conf = require('../nightwatch.conf.js');
 
+/* eslint max-len: 0 */
 module.exports = {
-  'riiiact-kit': function (browser) {
+  'riiiact-kit': function(browser) {
     browser
       .url(browser.launchUrl)
       .waitForElementVisible('#app .row')
-      .saveScreenshot(conf.imgpath(browser, 'main.png'))
+      .saveScreenshot(conf.imgpath(browser, 'main.png'));
 
     // show drawer
     browser
