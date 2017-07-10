@@ -34,12 +34,9 @@ exports[`components/App render 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      onMouseDown={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onMouseOut={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
       onTouchStart={[Function]}
       onTouchTap={[Function]}
       style={
@@ -64,10 +61,10 @@ exports[`components/App render 1`] = `
           "padding": 12,
           "position": "relative",
           "textDecoration": "none",
-          "transform": "translate(0, 0)",
           "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
           "verticalAlign": null,
           "width": 48,
+          "zIndex": 1,
         }
       }
       tabIndex={0}
@@ -160,12 +157,9 @@ exports[`components/App render 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
-          onMouseDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           onMouseOut={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
           onTouchStart={[Function]}
           onTouchTap={[Function]}
           style={
@@ -187,10 +181,10 @@ exports[`components/App render 1`] = `
               "padding": 12,
               "position": "relative",
               "textDecoration": "none",
-              "transform": "translate(0, 0)",
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 48,
+              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -226,7 +220,13 @@ exports[`components/App render 1`] = `
             </svg>
           </div>
         </button>
-        <div />
+        <div
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        />
       </div>
     </div>
   </div>
@@ -304,11 +304,12 @@ exports[`components/App render 1`] = `
         <div
           onTouchEnd={[Function]}
           open={null}
+          role="menuitem"
           style={
             Object {
               "backgroundColor": null,
               "color": "rgba(0, 0, 0, 0.3)",
-              "cursor": "not-allowed",
+              "cursor": "default",
               "display": "block",
               "fontSize": 16,
               "lineHeight": "48px",
@@ -422,12 +423,9 @@ exports[`components/App should invoke requestAuth when mount 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      onMouseDown={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onMouseOut={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
       onTouchStart={[Function]}
       onTouchTap={[Function]}
       style={
@@ -452,10 +450,10 @@ exports[`components/App should invoke requestAuth when mount 1`] = `
           "padding": 12,
           "position": "relative",
           "textDecoration": "none",
-          "transform": "translate(0, 0)",
           "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
           "verticalAlign": null,
           "width": 48,
+          "zIndex": 1,
         }
       }
       tabIndex={0}
@@ -548,12 +546,9 @@ exports[`components/App should invoke requestAuth when mount 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
-          onMouseDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           onMouseOut={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
           onTouchStart={[Function]}
           onTouchTap={[Function]}
           style={
@@ -575,10 +570,10 @@ exports[`components/App should invoke requestAuth when mount 1`] = `
               "padding": 12,
               "position": "relative",
               "textDecoration": "none",
-              "transform": "translate(0, 0)",
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 48,
+              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -614,7 +609,13 @@ exports[`components/App should invoke requestAuth when mount 1`] = `
             </svg>
           </div>
         </button>
-        <div />
+        <div
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        />
       </div>
     </div>
   </div>
@@ -692,11 +693,12 @@ exports[`components/App should invoke requestAuth when mount 1`] = `
         <div
           onTouchEnd={[Function]}
           open={null}
+          role="menuitem"
           style={
             Object {
               "backgroundColor": null,
               "color": "rgba(0, 0, 0, 0.3)",
-              "cursor": "not-allowed",
+              "cursor": "default",
               "display": "block",
               "fontSize": 16,
               "lineHeight": "48px",
@@ -814,12 +816,9 @@ exports[`components/App should not render children 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      onMouseDown={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onMouseOut={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
       onTouchStart={[Function]}
       onTouchTap={[Function]}
       style={
@@ -844,10 +843,10 @@ exports[`components/App should not render children 1`] = `
           "padding": 12,
           "position": "relative",
           "textDecoration": "none",
-          "transform": "translate(0, 0)",
           "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
           "verticalAlign": null,
           "width": 48,
+          "zIndex": 1,
         }
       }
       tabIndex={0}
@@ -940,12 +939,9 @@ exports[`components/App should not render children 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
-          onMouseDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           onMouseOut={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
           onTouchStart={[Function]}
           onTouchTap={[Function]}
           style={
@@ -967,10 +963,10 @@ exports[`components/App should not render children 1`] = `
               "padding": 12,
               "position": "relative",
               "textDecoration": "none",
-              "transform": "translate(0, 0)",
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 48,
+              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -1006,7 +1002,13 @@ exports[`components/App should not render children 1`] = `
             </svg>
           </div>
         </button>
-        <div />
+        <div
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        />
       </div>
     </div>
   </div>
@@ -1084,11 +1086,12 @@ exports[`components/App should not render children 1`] = `
         <div
           onTouchEnd={[Function]}
           open={null}
+          role="menuitem"
           style={
             Object {
               "backgroundColor": null,
               "color": "rgba(0, 0, 0, 0.3)",
-              "cursor": "not-allowed",
+              "cursor": "default",
               "display": "block",
               "fontSize": 16,
               "lineHeight": "48px",
@@ -1206,12 +1209,9 @@ exports[`components/App should render children 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      onMouseDown={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onMouseOut={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
       onTouchStart={[Function]}
       onTouchTap={[Function]}
       style={
@@ -1236,10 +1236,10 @@ exports[`components/App should render children 1`] = `
           "padding": 12,
           "position": "relative",
           "textDecoration": "none",
-          "transform": "translate(0, 0)",
           "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
           "verticalAlign": null,
           "width": 48,
+          "zIndex": 1,
         }
       }
       tabIndex={0}
@@ -1332,12 +1332,9 @@ exports[`components/App should render children 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
-          onMouseDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           onMouseOut={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
           onTouchStart={[Function]}
           onTouchTap={[Function]}
           style={
@@ -1359,10 +1356,10 @@ exports[`components/App should render children 1`] = `
               "padding": 12,
               "position": "relative",
               "textDecoration": "none",
-              "transform": "translate(0, 0)",
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 48,
+              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -1398,7 +1395,13 @@ exports[`components/App should render children 1`] = `
             </svg>
           </div>
         </button>
-        <div />
+        <div
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        />
       </div>
     </div>
   </div>
@@ -1476,11 +1479,12 @@ exports[`components/App should render children 1`] = `
         <div
           onTouchEnd={[Function]}
           open={null}
+          role="menuitem"
           style={
             Object {
               "backgroundColor": null,
               "color": "rgba(0, 0, 0, 0.3)",
-              "cursor": "not-allowed",
+              "cursor": "default",
               "display": "block",
               "fontSize": 16,
               "lineHeight": "48px",
@@ -1598,12 +1602,9 @@ exports[`components/App should render loading progress 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      onMouseDown={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onMouseOut={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
       onTouchStart={[Function]}
       onTouchTap={[Function]}
       style={
@@ -1628,10 +1629,10 @@ exports[`components/App should render loading progress 1`] = `
           "padding": 12,
           "position": "relative",
           "textDecoration": "none",
-          "transform": "translate(0, 0)",
           "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
           "verticalAlign": null,
           "width": 48,
+          "zIndex": 1,
         }
       }
       tabIndex={0}
@@ -1724,12 +1725,9 @@ exports[`components/App should render loading progress 1`] = `
           onFocus={[Function]}
           onKeyDown={[Function]}
           onKeyUp={[Function]}
-          onMouseDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           onMouseOut={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
           onTouchStart={[Function]}
           onTouchTap={[Function]}
           style={
@@ -1751,10 +1749,10 @@ exports[`components/App should render loading progress 1`] = `
               "padding": 12,
               "position": "relative",
               "textDecoration": "none",
-              "transform": "translate(0, 0)",
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 48,
+              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -1790,7 +1788,13 @@ exports[`components/App should render loading progress 1`] = `
             </svg>
           </div>
         </button>
-        <div />
+        <div
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        />
       </div>
     </div>
   </div>
@@ -1884,11 +1888,12 @@ exports[`components/App should render loading progress 1`] = `
         <div
           onTouchEnd={[Function]}
           open={null}
+          role="menuitem"
           style={
             Object {
               "backgroundColor": null,
               "color": "rgba(0, 0, 0, 0.3)",
-              "cursor": "not-allowed",
+              "cursor": "default",
               "display": "block",
               "fontSize": 16,
               "lineHeight": "48px",
