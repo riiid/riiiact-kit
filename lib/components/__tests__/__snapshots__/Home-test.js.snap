@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Home render 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"
+  >
+    <div
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": "2px",
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+                 0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontFamily": "Roboto, sans-serif",
+          "muiPrepared": true,
+          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": 8,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "muiPrepared": true,
+              "padding": 16,
+              "position": "relative",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "rgba(0, 0, 0, 0.87)",
+                "display": "block",
+                "fontSize": 24,
+                "lineHeight": "36px",
+                "muiPrepared": true,
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "rgba(0, 0, 0, 0.54)",
+                "display": "block",
+                "fontSize": 14,
+                "muiPrepared": true,
+              }
+            }
+          >
+            powered by
+          </span>
+        </div>
+        <div
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "muiPrepared": true,
+              "padding": 16,
+            }
+          }
+        >
+          <ul
+            style={
+              Object {
+                "marginTop": 0,
+              }
+            }
+          >
+            <li>
+              <code>
+                package1
+              </code>
+               : 
+              <code>
+                VERSION
+              </code>
+            </li>
+            <li>
+              <code>
+                package2
+              </code>
+               : 
+              <code>
+                VERSION
+              </code>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

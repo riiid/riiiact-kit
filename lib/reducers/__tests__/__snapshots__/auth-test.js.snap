@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/auth should handle requestAuth() 1`] = `
+Object {
+  "authenticated": false,
+  "user": null,
+}
+`;
+
+exports[`reducers/auth should receiveAuthFailure() 1`] = `
+Object {
+  "authenticated": false,
+  "error": Object {},
+  "user": null,
+}
+`;
+
+exports[`reducers/auth should receiveAuthSuccess() 1`] = `
+Object {
+  "authenticated": true,
+  "error": null,
+  "user": Object {},
+}
+`;

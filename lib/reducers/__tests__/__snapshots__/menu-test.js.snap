@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions/menu should handle requestMenu() 1`] = `
+Object {
+  "count": Object {
+    "currentViews": 0,
+    "totalViews": 0,
+  },
+}
+`;
+
+exports[`actions/menu should receiveMenuFailure 1`] = `
+Object {
+  "count": Object {
+    "currentViews": "N/A",
+    "totalViews": "N/A",
+  },
+  "error": Object {},
+}
+`;
+
+exports[`actions/menu should receiveMenuSuccess 1`] = `
+Object {
+  "count": Object {
+    "currentViews": 0,
+    "totalViews": 0,
+  },
+  "error": null,
+}
+`;

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/app should handle hideProgress() 1`] = `
+Object {
+  "drawerOpen": false,
+  "progress": false,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": true,
+}
+`;
+
+exports[`reducers/app should handle hideSnakcbar() 1`] = `
+Object {
+  "drawerOpen": false,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": true,
+}
+`;
+
+exports[`reducers/app should handle hideToolbar() 1`] = `
+Object {
+  "drawerOpen": false,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": false,
+}
+`;
+
+exports[`reducers/app should handle showProgress() 1`] = `
+Object {
+  "drawerOpen": false,
+  "progress": true,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": true,
+}
+`;
+
+exports[`reducers/app should handle showSnackbar() 1`] = `
+Object {
+  "drawerOpen": false,
+  "snackbar": Object {
+    "message": "MESSAGE",
+    "open": true,
+    "prop": "PROP",
+  },
+  "toolbar": true,
+}
+`;
+
+exports[`reducers/app should handle showToolbar() 1`] = `
+Object {
+  "drawerOpen": false,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": true,
+}
+`;
+
+exports[`reducers/app should handle toggleDrawer() 1`] = `
+Object {
+  "drawerOpen": true,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": true,
+}
+`;
+
+exports[`reducers/app should return initial state 1`] = `
+Object {
+  "drawerOpen": false,
+  "snackbar": Object {
+    "message": "",
+    "open": false,
+  },
+  "toolbar": true,
+}
+`;

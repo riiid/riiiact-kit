@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`epics/auth should call signInAnonymousely when requestAuth with null user 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_AUTH",
+  },
+  Object {
+    "type": "SHOW_PROGRESS",
+  },
+  Object {
+    "type": "RECIEVE_AUTH_SUCCESS",
+    "user": null,
+  },
+]
+`;
+
+exports[`epics/auth when requestAuth fail 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_AUTH",
+  },
+  Object {
+    "type": "SHOW_PROGRESS",
+  },
+  Object {
+    "type": "HIDE_PROGRESS",
+  },
+  Object {
+    "message": "로그인 중 오류 발생",
+    "props": Object {},
+    "type": "SHOW_SNACKBAR",
+  },
+  Object {
+    "error": [Error: ERROR],
+    "type": "RECIEVE_AUTH_FAILURE",
+  },
+]
+`;
+
+exports[`epics/auth when requestAuth success 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_AUTH",
+  },
+  Object {
+    "type": "SHOW_PROGRESS",
+  },
+  Object {
+    "type": "HIDE_PROGRESS",
+  },
+  Object {
+    "type": "RECIEVE_AUTH_SUCCESS",
+    "user": Object {
+      "isAnonymouse": true,
+      "uid": "UID",
+    },
+  },
+]
+`;

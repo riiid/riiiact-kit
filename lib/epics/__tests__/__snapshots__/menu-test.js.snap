@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`epics/menu when requestMenu fail 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_MENU",
+  },
+  Object {
+    "type": "SHOW_PROGRESS",
+  },
+  Object {
+    "type": "HIDE_PROGRESS",
+  },
+  Object {
+    "error": [Error: ERROR],
+    "type": "RECIEVE_MENU_FAILURE",
+  },
+]
+`;
+
+exports[`epics/menu when requestMenu success 1`] = `
+Array [
+  Object {
+    "type": "REQUEST_MENU",
+  },
+  Object {
+    "type": "SHOW_PROGRESS",
+  },
+  Object {
+    "type": "HIDE_PROGRESS",
+  },
+  Object {
+    "data": Object {
+      "currentViews": 2,
+      "totalViews": 100,
+    },
+    "type": "RECIEVE_MENU_SUCCESS",
+  },
+]
+`;
