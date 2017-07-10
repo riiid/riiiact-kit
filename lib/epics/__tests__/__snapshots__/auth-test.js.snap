@@ -9,6 +9,9 @@ Array [
     "type": "SHOW_PROGRESS",
   },
   Object {
+    "type": "HIDE_PROGRESS",
+  },
+  Object {
     "type": "RECIEVE_AUTH_SUCCESS",
     "user": null,
   },
