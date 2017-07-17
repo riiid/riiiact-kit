@@ -10,9 +10,7 @@
     "build": "Build app under dist/",
     "build:prod": "Build PRODUCTION app under dist/",
     "test": "Run unit test with watch",
-    "test:unit": "Run unit test once",
-    "test:e2e": "Run end to end test",
-    "coverage": "Run unit test and generate coverage"
+    "test:e2e": "Run end to end test"
   },
   "scripts": {
     "new": "node scripts/hasbin yarn && yarn && node scripts/new",
@@ -23,12 +21,9 @@
     "build": "rimraf dist && webpack --config build/webpack-build.config.js --progress --colors",
     "build:prod": "rimraf dist && TARGET=production webpack --config build/webpack-build.config.js --progress --colors",
     "test": "jest --watch --coverage --notify",
-    "test:unit": "jest",
     "test:e2e": "npm run selenium-download && nightwatch --config test/nightwatch.conf.js --env default",
-    "test:circleci": "npm run coverage:circleci && npm run test:e2e",
-    "lint": "eslint lib/** scripts/** test/** || true",
-    "coverage": "jest --coverage",
-    "coverage:circleci": "jest --coverage && cat coverage/lcov.info | coveralls"
+    "test:circleci": "jest --coverage --runInBand --forceExit && cat coverage/lcov.info | coveralls && npm run test:e2e",
+    "lint": "eslint lib/** scripts/** test/** || true"
   },
   "homepage": "https://riiiact-kit-dev.firebaseapp.com/",
   "author": "kykim",
