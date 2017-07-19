@@ -3,6 +3,7 @@
 exports[`reducers/app should handle hideProgress() 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "progress": false,
   "snackbar": Object {
     "message": "",
@@ -15,6 +16,7 @@ Object {
 exports[`reducers/app should handle hideSnakcbar() 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "snackbar": Object {
     "message": "",
     "open": false,
@@ -26,6 +28,7 @@ Object {
 exports[`reducers/app should handle hideToolbar() 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "snackbar": Object {
     "message": "",
     "open": false,
@@ -37,6 +40,7 @@ Object {
 exports[`reducers/app should handle showProgress() 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "progress": true,
   "snackbar": Object {
     "message": "",
@@ -49,6 +53,7 @@ Object {
 exports[`reducers/app should handle showSnackbar() 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "snackbar": Object {
     "message": "MESSAGE",
     "open": true,
@@ -61,6 +66,7 @@ Object {
 exports[`reducers/app should handle showToolbar() 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "snackbar": Object {
     "message": "",
     "open": false,
@@ -72,6 +78,7 @@ Object {
 exports[`reducers/app should handle toggleDrawer() 1`] = `
 Object {
   "drawerOpen": true,
+  "firebaseAvailable": false,
   "snackbar": Object {
     "message": "",
     "open": false,
@@ -83,6 +90,7 @@ Object {
 exports[`reducers/app should return initial state 1`] = `
 Object {
   "drawerOpen": false,
+  "firebaseAvailable": false,
   "snackbar": Object {
     "message": "",
     "open": false,
