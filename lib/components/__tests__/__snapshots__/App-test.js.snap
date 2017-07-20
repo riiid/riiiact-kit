@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/App render 1`] = `
-<div>
+<div
+  data-jsx={3792736204}
+>
   <div
     className="hide"
     style={
@@ -333,6 +335,7 @@ exports[`components/App render 1`] = `
   </div>
   <div
     className=""
+    data-jsx={3792736204}
   />
   <div
     open={false}
@@ -385,12 +388,16 @@ exports[`components/App render 1`] = `
       </div>
     </div>
   </div>
-  <br />
+  <br
+    data-jsx={3792736204}
+  />
 </div>
 `;
 
 exports[`components/App should not render children 1`] = `
-<div>
+<div
+  data-jsx={3792736204}
+>
   <div
     className="hide"
     style={
@@ -722,6 +729,7 @@ exports[`components/App should not render children 1`] = `
   </div>
   <div
     className=""
+    data-jsx={3792736204}
   >
     <div
       className="children"
@@ -778,12 +786,16 @@ exports[`components/App should not render children 1`] = `
       </div>
     </div>
   </div>
-  <br />
+  <br
+    data-jsx={3792736204}
+  />
 </div>
 `;
 
 exports[`components/App should render children 1`] = `
-<div>
+<div
+  data-jsx={3792736204}
+>
   <div
     className="hide"
     style={
@@ -1115,6 +1127,7 @@ exports[`components/App should render children 1`] = `
   </div>
   <div
     className=""
+    data-jsx={3792736204}
   >
     <div
       className="children"
@@ -1171,12 +1184,16 @@ exports[`components/App should render children 1`] = `
       </div>
     </div>
   </div>
-  <br />
+  <br
+    data-jsx={3792736204}
+  />
 </div>
 `;
 
 exports[`components/App should render loading progress 1`] = `
-<div>
+<div
+  data-jsx={3792736204}
+>
   <div
     className="hide"
     style={
@@ -1406,12 +1423,11 @@ exports[`components/App should render loading progress 1`] = `
     </div>
   </div>
   <div
-    className="app-progress"
+    className="progress"
+    data-jsx={106523559}
     style={
       Object {
-        "position": "fixed",
         "top": 0,
-        "width": "100%",
       }
     }
   >
@@ -1524,6 +1540,7 @@ exports[`components/App should render loading progress 1`] = `
   </div>
   <div
     className=""
+    data-jsx={3792736204}
   />
   <div
     open={false}
@@ -1576,6 +1593,8 @@ exports[`components/App should render loading progress 1`] = `
       </div>
     </div>
   </div>
-  <br />
+  <br
+    data-jsx={3792736204}
+  />
 </div>
 `;
