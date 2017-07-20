@@ -17,7 +17,12 @@ Array [
   },
   Object {
     "type": "RECIEVE_AUTH_SUCCESS",
-    "user": null,
+    "user": Object {
+      "displayName": null,
+      "email": null,
+      "isAnonymouse": true,
+      "uid": "UID",
+    },
   },
 ]
 `;
@@ -67,6 +72,8 @@ Array [
   Object {
     "type": "RECIEVE_AUTH_SUCCESS",
     "user": Object {
+      "displayName": null,
+      "email": null,
       "isAnonymouse": true,
       "uid": "UID",
     },
