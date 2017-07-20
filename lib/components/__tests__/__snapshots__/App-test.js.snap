@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`components/App mapStateToProps 1`] = `
+Object {
+  "drawerOpen": true,
+  "loading": false,
+  "snackbar": undefined,
+  "toolbar": true,
+  "user": Object {},
+}
+`;
+
 exports[`components/App render 1`] = `
 <div
   data-jsx={3792736204}
@@ -394,7 +404,7 @@ exports[`components/App render 1`] = `
 </div>
 `;
 
-exports[`components/App should not render children 1`] = `
+exports[`components/App render children 1`] = `
 <div
   data-jsx={3792736204}
 >
@@ -792,7 +802,7 @@ exports[`components/App should not render children 1`] = `
 </div>
 `;
 
-exports[`components/App should render children 1`] = `
+exports[`components/App render children with no user 1`] = `
 <div
   data-jsx={3792736204}
 >
@@ -1190,7 +1200,7 @@ exports[`components/App should render children 1`] = `
 </div>
 `;
 
-exports[`components/App should render loading progress 1`] = `
+exports[`components/App render loading progress 1`] = `
 <div
   data-jsx={3792736204}
 >
